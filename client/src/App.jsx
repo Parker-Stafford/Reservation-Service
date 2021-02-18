@@ -59,7 +59,8 @@ function App () {
   useEffect(() => {
     let urlLocation = window.location.pathname.split('/');
     let id = urlLocation[urlLocation.length - 1];
-    //console.log('AppartmentId', id);
+    // console.log('AppartmentId', id);
+    id = id || 1;
 
     setAppartmentID(id);
     //console.log('requst made');

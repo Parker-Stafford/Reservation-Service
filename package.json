@@ -12,8 +12,8 @@
     "build": "webpack -d –watch",
     "seed": "node DB/seed.js",
     "server:dev": "nodemon server/server.js",
-    "start:pm2": "pm2 start server/server.js",
-    "stop:pm2": "pm2 stop server/server.js"
+    "start:pm2": "pm2 start server/server.js reservation",
+    "stop:pm2": "pm2 stop reservation"
   },
   "dependencies": {
     "@babel/core": "^7.12.3",
@@ -32,6 +32,7 @@
     "loader-runner": "^4.1.0",
     "moment": "^2.29.1",
     "mongoose": "^5.10.14",
+    "nodemon": "^2.0.6",
     "react": "^17.0.1",
     "react-collapsible": "^2.8.1",
     "react-datepicker": "^3.3.0",
